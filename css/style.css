@@ -1,0 +1,190 @@
+body{
+	background-color: green;
+	font-family: 'Edu NSW ACT Foundation', cursive;	
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0;
+	display: flex;
+	background-color:rgb(25, 57, 25, 0.8) ;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+}
+
+.navigation a{
+	position: relative;
+	font-size: 1.3em;
+	color: #fff;
+	font-weight: 500;
+}
+
+.navigation a:hover{
+	color: #fff;
+}
+.menu3:hover:hover{
+	color: #000;
+}
+
+.navigation a::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	color: #fff;
+	border-radius: 5px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+.menu2{
+	background: transparent;
+	backdrop-filter: blur(20px);
+}
+
+.navigation a:hover::after{
+	transform: scaleX(1);
+	transform-origin: left;
+}
+
+.fondo1{
+	width: 100%; height: 100vh;
+	background-image: url(../img/fondo2.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+
+}
+
+.fondo2{
+	background-image: url(../img/fondo4.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.titulo1{
+    padding-top: 400px;
+    color: #000;
+    padding-left: 3%;
+}
+
+.textofondo1{
+	position: absolute;
+	right:2%;
+	bottom: 5%;
+	background-color: rgb(25, 57, 25, 0.8) ;
+    border-radius: 20px;
+	color: #000;
+}
+.grupoGaleria img{
+	width: 15%;
+	border-radius: 12px;
+	transition: 1.5s;
+}
+
+.grupoGaleria img:hover{
+	transform: scale(1.2);
+	border: 2px solid #000;
+}
+
+.contenedor1{
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+}
+.logo:hover{
+	transform: scale(1.1);
+	transition-duration: 1s;
+}
+footer{
+	width: 100%;
+	background-color: rgb(25, 57, 25, 0.8) ;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer img:hover{
+	transform: scale(1.2);
+	transition-duration: 1s;
+}
+
+footer li:hover{
+	transform: scale(1.1);
+	transition-duration: 1s;
+	color: blue;
+}
+
+footer a:link{text-decoration: none;color: #fff;}
+footer a:visited{text-decoration: none;color: #fff;}
+footer a:active{text-decoration: none;color: #fff;}
+
+/*Página Razas y Media*/
+/*Tarjetas*/
+.fondo2 .card{
+	width: 320px;
+	height: 500px;
+	border-radius: 20px;
+	overflow: hidden;
+	border: 8px solid #fff;
+	position: relative;
+}
+.fondo2 .card-img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+.fondo2 .card-body{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: -100%;
+	position: absolute;
+	background: #1f3d4738;
+	backdrop-filter: blur(5px);
+	border-radius: 15px;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: 2s;
+}
+
+.card:hover .card-body{
+	right: 0;
+
+}
+
+.fondo2 .card-title{
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: 500;
+}
+.fondo2 .card-text{
+	font-size: 16px;
+	line-height: 25px;
+	margin: 40px 0;
+	font-weight: 400;
+	text-transform: capitalize;
+}
+.fondo2 .btn{
+	cursor: pointer;
+	text-transform: capitalize;
+	width: 150px;
+}
+/*Página Contacto*/
+.contacto2 li{
+	list-style: none;
+}
+.contacto2 a:visited{text-decoration: none; color: #fff;}
+.contacto2 a:link{text-decoration: none; color: #fff;}
+.contacto2 a:active{text-decoration: none; color: #fff;}
